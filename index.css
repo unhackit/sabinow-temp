@@ -78,7 +78,7 @@ header {
 .web-span {
     display: block;
     position: relative;
-    margin-left: 300px;
+    margin-left: 400px;
 }
 nav {
     margin: 0;
@@ -1712,7 +1712,7 @@ nav ul li {
     
     #review .instructors__content .description {
         width: 100%;
-        background: url('./assets/instruct.svg');
+        background: url('../assets/instruct.svg');
         background-repeat: no-repeat;
         background-position: right;
         background-size: 200px;
