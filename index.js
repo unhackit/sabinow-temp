@@ -1,3 +1,29 @@
+//Js to trigger animations
+document.addEventListener('scroll', function (e) {
+  var top  = window.pageYOffset + window.innerHeight,
+      isVisible = top > document.querySelector('.category__content').offsetTop;
+
+  var top2 = window.pageYOffset + window.innerHeight,
+      isVisible2 = top2 > document.querySelector('.category__content__flex').offsetTop;
+
+  var top3 = window.pageYOffset + window.innerHeight,
+    isVisible3 = top3 > document.querySelector('.instructors__content').offsetTop;
+
+   if (isVisible) {
+     document.querySelector('.category__content').classList.add('category__content__animation');
+   }
+   
+   if(isVisible2){
+    document.querySelector('.category__content__flex').classList.add('category__content__animation');
+   }
+
+   if(isVisible3){
+    document.querySelector('.instructors__content').classList.add('instructors__animation');
+   }
+});
+
+console.log('all animations')
+
 particlesJS("particles-js", {
     particles: {
       number: { value: 25, density: { enable: true, value_area: 800 } },
@@ -55,26 +81,4 @@ particlesJS("particles-js", {
   });
 
   console.log('hello')
-  //Js to trigger animations
-  document.addEventListener('scroll', function (e) {
-    var top  = window.pageYOffset + window.innerHeight,
-        isVisible = top > document.querySelector('.category__content').offsetTop;
-
-    var top2 = window.pageYOffset + window.innerHeight,
-        isVisible2 = top2 > document.querySelector('.category__content__flex').offsetTop;
-
-    var top3 = window.pageYOffset + window.innerHeight,
-      isVisible3 = top3 > document.querySelector('.instructors__content').offsetTop;
   
-     if (isVisible) {
-       document.querySelector('.category__content').classList.add('category__content__animation');
-     }
-     
-     if(isVisible2){
-      document.querySelector('.category__content__flex').classList.add('category__content__animation');
-     }
-
-     if(isVisible3){
-      document.querySelector('.instructors__content').classList.add('instructors__animation');
-     }
-  });
