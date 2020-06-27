@@ -55,8 +55,14 @@ body {
     margin-left: auto;
 }
 
+.container-80-left {
+    width: 90%;
+    margin-left: auto;
+}
+
 header {
     padding: 0;
+    overflow: hidden;
 }
 
 .toggle, [id^=drop] {
@@ -78,7 +84,7 @@ header {
 .web-span {
     display: block;
     position: relative;
-    margin-left: 430px;
+    left: 250px;
 }
 nav {
     margin: 0;
