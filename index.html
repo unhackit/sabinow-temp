@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabinow</title>
+    <link rel="stylesheet" href='./index.css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script src="https://kit.fontawesome.com/36afc40636.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section id="header">
+        <header class="container-80">
+            <nav>
+                <label for="drop" class="toggle"> <img src="./assets/logo.svg"> <i class="fas fa-bars" id="toggle-bar"></i></label>
+                <input type="checkbox" id="drop" />
+                <ul class="menu">
+                <li class="web-logo"><a href="index.html"><img src="./assets/logo.svg"></a></li>
+                <span class="web-span">
+                    <li> 
+                        <!-- First Tier Drop Down -->
+                        <label for="drop-2" class="toggle">Programs <i class="fas fa-angle-down"></i></label>
+                            <a href="#">Programs</a>
+                            <input type="checkbox" id="drop-2"/>
+                            <ul>
+                            <li><a href="#">Business </a></li>
+                            <li><a href="#">Management</a></li>
+                            <li> 
+                            <!-- Second Tier Drop Down -->
+                            <label for="drop-3" class="toggle">Engineering <i class="fas fa-angle-down"></i></label>
+                            <a href="#">Engineering</a>
+                            <input type="checkbox" id="drop-3"/>
+                            <ul>
+                            <li><a href="#">HTML/CSS</a></li>
+                            <li><a href="#">jQuery</a></li>
+                            <li><a href="#">Python</a></li>
+                            </ul>
+                        </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Become An Instructor</a></li>
+                    <li><a href="#"><img src='./assets/cart.svg'>Cart</a></li>
+                    <li><a href="#"><button class="login__button">LOG IN</button></a></li>
+                    <li><a href="#"><button class="register__button">SIGN UP</button></a></li>
+                </span style="margin-left: auto;">
+                </ul>
+            </nav>
+        </header>
+    </section>
+
+    <section id="landing__view">
+        <div id="particles-js"></div>
+        <div class="container-80">
+            <div class="landing__main__content">
+                <div>
+                    <h1>Discover thousands of courses designed for you</h1>
+                    <p>Study any topic, any time. Explore from thousands of topics</p>
+                    <div class="grouped__input">
+                        <input type="text"/>
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <button class="button__get__started">GET STARTED</button>
+                </div>
+                <div>
+                    <img src="./assets/landingvector.svg"/>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="offer__section">
+        <div class="container-80">
+            <div class="offer__content">
+                <div class="offer__content__card">
+                    <h1>What We Offer</h1>
+                </div>
+                <div class="offer__content__card">
+                    <img src='./assets/learn.svg'/>
+                    <h1>Learn</h1>
+                    <p>From 100,000 courses to choose from</p>
+                </div>
+                <div class="offer__content__card">
+                    <img src='./assets/receive.svg'/>
+                    <h1>Receive</h1>
+                    <p>Lifetime access to unlimited content</p>
+                </div>
+                <div class="offer__content__card">
+                    <img src='./assets/receive.svg'/>
+                    <h1>Access</h1>
+                    <p>Through dedicated experts, we improve you </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="category__section">
+        <div class="container-80">
+            <div class="category__section__header">
+                <h1>Categories</h1>
+                <p>Study any topic, any time. Explore from thousands of topics </p>
+            </div>
+
+            <div class="category__content">
+                <div class="category__box category-one">
+                    <img src='./assets/growth.svg'>
+                    <p class="title">Growth</p>
+                    <p class="desc">20,000 students like this </p>
+                </div>
+
+                <div class="category__box category-two">
+                    <img src='./assets/design.svg'>
+                    <p class="title">Design</p>
+                    <p class="desc">20,000 students like this </p>
+                </div>
+
+                <div class="category__box category-three">
+                    <img src='./assets/marketing.svg'>
+                    <p class="title">Business</p>
+                    <p class="desc">20,000 students like this </p>
+                </div>
+            </div>
+
+            <div class="category__content__flex">
+                <div class="category__box category-two">
+                    <img src='./assets/design.svg'>
+                    <p class="title">Design</p>
+                    <p class="desc">20,000 students like this </p>
+                </div>
+
+                <div class="category__box category-three">
+                    <img src='./assets/marketing.svg'>
+                    <p class="title">Business</p>
+                    <p class="desc">20,000 students like this </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="all__categories">
+        <div class="container-80-right">
+            <div class="category__summary">
+                <h1>Select from any <br/>category</h1>
+                <p>Take a look at some of these highlighted courses that might <br/>pick your interest</p>
+                <img src="./assets/phone.svg"/>
+                <a href='/'>View all categories</a>
+            </div>
+            <div class="category__image">
+                <img src='./assets/group.svg'/>
+            </div>
+        </div>
+    </section>
+
+    <section id="course__collection">
+        <div class="container-80-right">
+            <div class="course__collection__header">
+                <h1>Largest Collection of Courses</h1>
+                <p>Take a look at some of these highlighted courses that might pick your interest out of thousands of topics</p>
+            </div>
+            <div class="course__collection__content">
+                <div class="course__collection__left">
+                    <img src='./assets/collection.svg'/>
+                </div>
+                <div class="course__collection__right">
+                    <div class="course-slider">
+                        <div class="course-card">
+                            <img src='./assets/course.svg'/>
+                            <div class="course-card-body">
+                                <h1>Communicating Effectively</h1>
+                                <p class="owner">Chris Doherty</p>
+                                <div>
+                                    <div class="Stars" style="--rating: 2.9;" aria-label="Rating of this product is 2.3 out of 5."></div>
+                                    <span class="rate-text">3.6 (17,426)</span>
+                                </div>
+                                  <p class="level"><i class="fas fa-signal"></i> Intermediate</p>
+                                  <p class="time"><i class="far fa-clock"></i> 8 hours total</p>
+                                  <div class="action">
+                                    <button>Add to Cart</button>
+                                    <i class="far fa-heart"></i>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="course-card">
+                            <img src='./assets/course.svg'/>
+                            <div class="course-card-body">
+                                <h1>Communicating Effectively</h1>
+                                <p class="owner">Chris Doherty</p>
+                                <div>
+                                    <div class="Stars" style="--rating: 2.9;" aria-label="Rating of this product is 2.3 out of 5."></div>
+                                    <span class="rate-text">3.6 (17,426)</span>
+                                </div>
+                                  <p class="level"><i class="fas fa-signal"></i> Intermediate</p>
+                                  <p class="time"><i class="far fa-clock"></i> 8 hours total</p>
+                                  <div class="action">
+                                    <button>Add to Cart</button>
+                                    <i class="far fa-heart"></i>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="course-card">
+                            <img src='./assets/course.svg'/>
+                            <div class="course-card-body">
+                                <h1>Communicating Effectively</h1>
+                                <p class="owner">Chris Doherty</p>
+                                <div>
+                                    <div class="Stars" style="--rating: 2.9;" aria-label="Rating of this product is 2.3 out of 5."></div>
+                                    <span class="rate-text">3.6 (17,426)</span>
+                                </div>
+                                  <p class="level"><i class="fas fa-signal"></i> Intermediate</p>
+                                  <p class="time"><i class="far fa-clock"></i> 8 hours total</p>
+                                  <div class="action">
+                                    <button>Add to Cart</button>
+                                    <i class="far fa-heart"></i>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="review">
+        <section id="instructors">
+            <div class="container-80">
+                <div class="instructors__content">
+                    <div class="description">
+                        <h1>Want to become an <br/> instructor ?</h1>
+                        <p>Top instructors from around the world teach millions of students on SabiNow. We provide the tools and skills to teach what you love.</p>
+                        <button>GET STARTED</button>
+                    </div>
+                    <div class="illustration">
+                        <img src='./assets/instruct.svg'/>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="students">
+            <div class="container-80-right">
+                <div class="students__content">
+                    <div class="students__content__left">
+                        <h1>What our Students are saying</h1>
+                    </div>
+                    <div class="students__content__right">
+                        <div class="students-slider">
+                            <div class="students__card">
+                                <img src="./assets/study.svg"/>
+                                <p class="title">Kelvin Ujuagu</p>
+                                <p class="desc">“I believe in lifelong learning and SabiNow is a great place to learn from the very best and top experts in the field.”</p>
+                            </div>
+                            <div class="students__card">
+                                <img src="./assets/study.svg"/>
+                                <p class="title">Kelvin Ujuagu</p>
+                                <p class="desc">“I believe in lifelong learning and SabiNow is a great place to learn from the very best and top experts in the field.”</p>
+                            </div>
+                            <div class="students__card">
+                                <img src="./assets/study.svg"/>
+                                <p class="title">Kelvin Ujuagu</p>
+                                <p class="desc">“I believe in lifelong learning and SabiNow is a great place to learn from the very best and top experts in the field.”</p>
+                            </div>
+                            <div class="students__card">
+                                <img src="./assets/study.svg"/>
+                                <p class="title">Kelvin Ujuagu</p>
+                                <p class="desc">“I believe in lifelong learning and SabiNow is a great place to learn from the very best and top experts in the field.”</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section id="footer">
+        <footer>
+            <div class="container-80">
+                <div class="footer__links">
+                    <div class="main__links">
+                        <p>Sabinow</p>
+                        <a href="/">About Us</a>
+                        <a href="/">Contact Us</a>
+                        <a href="/">Terms & Privacy</a>
+                        <a href="/">FAQs</a>
+                    </div>
+                    <div class="main__links">
+                        <p>Careers</p>
+                        <a href="/">Become an Instructor</a>
+                        <a href="/">Work with Us</a>
+                    </div>
+                    <div class="main__links">
+                        <p>Other</p>
+                        <a href="/">Help & Support</a>
+                        <a href="/">Payments</a>
+                        <a href="/">Blog</a>
+                    </div>
+                    <div class="social__links">
+                        <a href='/'><i class="fab fa-facebook-square"></i></a>
+                        <a href='/'><i class="fab fa-instagram"></i></a>
+                        <a href='/'><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <hr/>
+                <div class="copyright">
+                    <p>© 2020 SabiNow, Inc. All rights reserved.</
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src='/index.js'></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $('.course-slider').slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        autoplay: false,
+        infinite: true,
+        //arrows: true,
+        dots: false,
+        nextArrow: "<div class='slick-next'><i class='fas fa-chevron-right'></i></div>",
+        prevArrow: '',
+        autoplaySpeed: 2000,
+        variableWidth: true,
+        color: '#f7f7f7',
+        responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: false,
+            autoplay: false,
+            }
+        },
+        {
+            breakpoint: 700,
+            settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            initialSlide: 2,
+            autoplay: false,
+            }
+        },
+        {
+            breakpoint: 500,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                initialSlide: 1,
+                autoplay: false,
+            }
+        }
+        ]
+    });
+
+
+    $('.students-slider').slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        autoplay: true,
+        infinite: true,
+        //arrows: true,
+        dots: false,
+        nextArrow: '',
+        prevArrow: '',
+        autoplaySpeed: 2000,
+        variableWidth: true,
+        color: '#f7f7f7',
+        responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: false
+            }
+        },
+        {
+            breakpoint: 700,
+            settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            initialSlide: 2
+            }
+        },
+        {
+            breakpoint: 500,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                initialSlide: 1
+            }
+        }
+        ]
+    });
+    </script>
+</body>
+</html>
