@@ -1872,3 +1872,11 @@ nav ul li {
     margin: 20px 0;
  }
 }
+
+@media screen and (min-width:1300px){
+    .web-span {
+        display: block;
+        position: relative;
+        left: 360px;
+    }
+}
