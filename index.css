@@ -532,6 +532,12 @@ nav ul li .register__button:hover {
     margin: 10px 14px 10px 0;
 }
 
+#course__collection .course__collection__right .course-slider .course-card img{
+    width: 100%;
+    height: 150px;
+    border-radius: 8px 8px 0 0;
+}
+
 #course__collection .course__collection__right .course-slider .course-card .course-card-body {
     padding: 0px 10px 5px 10px;
 }
