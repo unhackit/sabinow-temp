@@ -62,7 +62,6 @@ body {
 
 header {
     padding: 0;
-    overflow: hidden;
 }
 
 .toggle, [id^=drop] {
@@ -79,6 +78,7 @@ header {
 
 .menu {
     width: 100%;
+    max-width: 70vw!important;
 }
 
 .web-span {
@@ -147,7 +147,7 @@ nav ul ul {
    top: 60px;
 }
   
-nav ul li:hover > ul { display: inherit; z-index: 2; }
+nav ul li:hover > ul { display: block; z-index: 2; }
   
 nav ul ul li {
     width: 170px;
@@ -204,6 +204,7 @@ nav ul li .register__button:hover {
     background: #F7F7F7;
     height: 515px;
     width: 100%;
+    z-index: -1;
 }
 
 #landing__view .landing__main__content {
@@ -808,7 +809,7 @@ nav ul li .register__button:hover {
 .web-span {
        display: block;
        position: relative;
-       margin-left: 0;
+       left: 0;
 }
 
 .web-logo {
