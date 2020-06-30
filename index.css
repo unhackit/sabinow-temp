@@ -78,13 +78,13 @@ header {
 
 .menu {
     width: 100%;
-    max-width: 70vw!important;
+    max-width: 60vw!important;
 }
 
 .web-span {
     display: block;
     position: relative;
-    left: 250px;
+    left: 300px;
 }
 nav {
     margin: 0;
@@ -149,6 +149,10 @@ nav ul ul {
   
 nav ul li:hover > ul { display: block; z-index: 2; }
   
+nav ul ul{
+    width: 250px;
+}
+
 nav ul ul li {
     width: 170px;
     float: none;
@@ -197,7 +201,113 @@ nav ul li .register__button:hover {
     color: #000!important;
 }
 
+nav ul .badge-icon {
+    color: #fff;
+    background-color: #dc3545;
+    display: inline-block;
+    padding: .25em .5em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1.4;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 40%;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    box-sizing: border-box;
+    position: relative;
+    bottom: 3px;
+    margin-left: 2px;
+}
+nav ul li .user {
+    padding: 5px;
+    position: relative;
+    bottom: 5px;
+}
 
+header .user-dropdown {
+    position: absolute;
+    top: 11%;
+    width: 20%;
+    right: 10%;
+    border-radius: 5px;
+    background: #fff;
+    z-index: 2;
+    padding: 10px;
+}
+
+header .user-dropdown:focus {
+    position: absolute;
+    top: 11%;
+    width: 20%;
+    right: 10%;
+    border-radius: 5px;
+    background: #fff;
+    z-index: 2;
+    padding: 10px;
+}
+
+header .user-dropdown button{
+    padding: 10px 20px;
+    border:1px solid #dc3545;
+    background: #fff;
+    color:#dc3545;
+    cursor: pointer;
+}
+
+header .user-dropdown button:hover{
+    padding: 10px 20px;
+    border:1px solid #dc3545;
+    background: #dc3545;
+    color:#fff;
+    cursor: pointer;
+}
+
+header .user-dropdown ul {
+    margin: 0;
+    padding: 0;
+}
+
+header .user-dropdown ul li{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+
+header .user-dropdown ul li:hover{
+    background: #F1F0F4;
+}
+
+header .user-dropdown ul li a{
+    color: rgb(80, 80, 80);
+    text-decoration: none;
+}
+
+header .hidden {
+    visibility: hidden;
+}
+
+nav ul li .user:hover {
+    background: #f1f0f4;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+nav ul li .user img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+nav ul li .user .name {
+    position: relative;
+    bottom: 15px;
+}
+
+nav ul li .user i {
+    position: relative;
+    bottom: 15px;
+}
 /** Landing View **/
 
 #landing__view {
@@ -812,6 +922,12 @@ nav ul li .register__button:hover {
        left: 0;
 }
 
+nav ul li .user:hover {
+    background: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 .web-logo {
     display: none;
 }
@@ -820,7 +936,11 @@ nav ul li .register__button:hover {
     width: 90%;
     margin: 0 auto;
 }
-
+.container-80-left {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
 #logo {
   display: block;
   padding: 0;
@@ -937,6 +1057,7 @@ nav ul ul ul li {
 }
 
 }
+
   
 @media all and (max-width : 330px) {
   
@@ -995,6 +1116,16 @@ nav ul li {
 }
 
 @media screen and (max-width:800px){
+    header .user-dropdown {
+        position: absolute;
+        top: 61%;
+        left: 0%;
+        border-radius: 5px;
+        background: #fff;
+        z-index: 2;
+        padding: 10px;
+        width: 40%!important;
+    }
 
 #offer__section .offer__content {
     width: 100%;
@@ -1243,7 +1374,16 @@ nav ul li {
 
 
 @media screen and (max-width:594px){
-    
+    header .user-dropdown {
+        position: absolute;
+        top: 61%;
+        left: 0%;
+        border-radius: 5px;
+        background: #fff;
+        z-index: 2;
+        padding: 10px;
+        width: 50%!important;
+    }
     #offer__section .offer__content .offer__content__card:nth-child(1){
         border: none;
         box-sizing: border-box;
@@ -1568,6 +1708,17 @@ nav ul li {
     }
 
 @media screen and (max-width:1024px){
+    header .user-dropdown {
+        position: absolute;
+        top: 61%;
+        width: 25%;
+        left: 0%;
+        border-radius: 5px;
+        background: #fff;
+        z-index: 2;
+        padding: 10px;
+    }
+
     #course__collection {
         height: 600px;
         background: #F7F7F7;
@@ -1884,6 +2035,19 @@ nav ul li {
     .web-span {
         display: block;
         position: relative;
-        left: 360px;
+        left: 350px;
+    }
+}
+
+@media screen and (max-width:370px){
+    header .user-dropdown {
+        position: absolute;
+        top: 61%;
+        left: 0%;
+        border-radius: 5px;
+        background: #fff;
+        z-index: 2;
+        padding: 10px;
+        width: 100%!important;
     }
 }

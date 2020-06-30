@@ -41,12 +41,31 @@
                         </ul>
                     </li>
                     <li><a href="#">Become An Instructor</a></li>
-                    <li><a href="#"><img src='./assets/cart.svg'>Cart</a></li>
-                    <li><a href="#"><button class="login__button">LOG IN</button></a></li>
-                    <li><a href="#"><button class="register__button">SIGN UP</button></a></li>
+                    <li><a href="#"><i class="far fa-bell" style="font-size: 20px;color:#dc3545"></i> <span class="badge-icon">0</span></a></li>
+                    <li><a href="#"><img src='./assets/cart.svg'>Cart <span class="badge-icon">0</span></a></li>
+                    <li>
+                        <div class="user">
+                            <img src='https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/demo-3/img/user-13.005c80e1.jpg'/>
+                            <span class="name">William</span>
+                            <i class="fas fa-angle-down"></i>
+                        </div>
+                    </li>
+                    <!-- <li><a href="#"><button class="login__button">LOG IN</button></a></li>
+                    <li><a href="#"><button class="register__button">SIGN UP</button></a></li> -->
                 </span style="margin-left: auto;">
                 </ul>
             </nav>
+            <div class="user-dropdown hidden">
+                <ul>
+                    <li><a href='/'>My Courses</a></li>
+                    <li><a href='/'>My Wishlist</a></li>
+                    <li><a href='/'>Purchase History</a></li>
+                    <li><a href='/'>User Profile</a></li>
+                    <li><a href='/'>Become an Instructor</a></li>
+                    <hr/>
+                    <button class="logout">LOGOUT</button>
+                </ul>
+            </div>
         </header>
     </section>
 
