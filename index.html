@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sabinow</title>
-    <link rel="stylesheet" href='./index.css'>
+    
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <script src="https://kit.fontawesome.com/36afc40636.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href='./index.css'>
 </head>
 <body>
-    <section id="header">
+    <section id="header" class="pt-2 pb-3">
         <header class="container-80-left">
-            <nav>
+            <div class="navigation">
                 <label for="drop" class="toggle"> <img src="./assets/logo.svg"> <i class="fas fa-bars" id="toggle-bar"></i></label>
                 <input type="checkbox" id="drop" />
                 <ul class="menu">
@@ -41,19 +43,21 @@
                     </li>
                     <li><a href="#">Become An Instructor</a></li>
                     <li><a href="#"><i class="far fa-bell" style="font-size: 20px;color:#dc3545"></i> <span class="badge-icon">0</span></a></li>
-                    <li><a href="#"><img src='./assets/cart.svg'>Cart <span class="badge-icon">0</span></a></li>
+                    <li><a href="#"><img src='./assets/cart.svg' class="mb-2">Cart <span class="badge-icon">0</span></a></li>
                     <li>
-                        <div class="user">
+                        <div class="user d-flex align-content-center ">
                             <img src='https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/demo-3/img/user-13.005c80e1.jpg'/>
-                            <span class="name">William</span>
-                            <i class="fas fa-angle-down"></i>
+                            <div>
+                                <span class="name">William</span>
+                                <i class="fas fa-angle-down"></i>
+                            </div>
                         </div>
                     </li>
                     <!-- <li><a href="#"><button class="login__button">LOG IN</button></a></li>
                     <li><a href="#"><button class="register__button">SIGN UP</button></a></li> -->
                 </span style="margin-left: auto;">
                 </ul>
-            </nav>
+            </div>
             <div class="user-dropdown hidden">
                 <ul>
                     <li><a href='/'>My Courses</a></li>

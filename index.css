@@ -86,7 +86,7 @@ header {
     position: relative;
     left: 300px;
 }
-nav {
+.navigation {
     margin: 0;
     padding: 0;
     background-color: #fff;
@@ -101,13 +101,13 @@ nav {
     line-height: 60px;
 }
   
-nav:after {
+.navigation:after {
     content: "";
     display: table;
     clear: both;
 }
   
-nav ul {
+.navigation ul {
     float: left;
     padding: 0;
     margin: 0;
@@ -115,20 +115,20 @@ nav ul {
     position: relative;
 }
   
-nav ul li {
+.navigation ul li {
     margin: 0px;
     display: inline-block;
     float: left;
     background-color: #fff;
 }
 
-nav ul li img {
+.navigation ul li img {
     position: relative;
     top: 3px;
     margin-right: 6px;
 }
   
-nav a {
+.navigation a {
     display: block;
     padding: 0 20px;
     color: #000;
@@ -137,30 +137,30 @@ nav a {
     text-decoration: none;
 }
   
-nav ul li ul li:hover { background: #fff; }
+.navigation ul li ul li:hover { background: #fff; }
   
-nav a:hover { background-color: #fff; }
+.navigation a:hover { background-color: #fff; }
   
-nav ul ul {
+.navigation ul ul {
    display: none;
    position: absolute;    
    top: 60px;
 }
   
-nav ul li:hover > ul { display: block; z-index: 2; }
+.navigation ul li:hover > ul { display: block; z-index: 2; }
   
-nav ul ul{
+.navigation ul ul{
     width: 250px;
 }
 
-nav ul ul li {
+.navigation ul ul li {
     width: 170px;
     float: none;
     display: list-item;
     position: relative;
 }
   
-nav ul ul ul li {
+.navigation ul ul ul li {
     position: relative;
     top: -60px;
     left: 170px;
@@ -170,7 +170,7 @@ li > a:after { content: ' ⌄'; position: relative; bottom: 5px; }
   
 li > a:only-child:after { content: ''; }
 
-nav ul li .login__button {
+.navigation ul li .login__button {
     border: 1px solid #000;
     border-radius: 8px;
     padding: 12px 30px;
@@ -178,14 +178,14 @@ nav ul li .login__button {
     color: #000;
 }
 
-nav ul li .login__button:hover {
+.navigation ul li .login__button:hover {
     border: 1px solid #000;
     border-radius: 8px;
     padding: 12px 30px;
     background: #000;
     color: #fff!important;
 }
-nav ul li .register__button {
+.navigation ul li .register__button {
     border: 1px solid #000;
     border-radius: 8px;
     padding: 12px 30px;
@@ -193,7 +193,7 @@ nav ul li .register__button {
     color: #fff!important;
 }
 
-nav ul li .register__button:hover {
+.navigation ul li .register__button:hover {
     border: 1px solid #000;
     border-radius: 8px;
     padding: 12px 30px;
@@ -201,7 +201,7 @@ nav ul li .register__button:hover {
     color: #000!important;
 }
 
-nav ul .badge-icon {
+.navigation ul .badge-icon {
     color: #fff;
     background-color: #dc3545;
     display: inline-block;
@@ -218,7 +218,7 @@ nav ul .badge-icon {
     bottom: 3px;
     margin-left: 2px;
 }
-nav ul li .user {
+.navigation ul li .user {
     padding: 5px;
     position: relative;
     bottom: 5px;
@@ -288,25 +288,25 @@ header .hidden {
     visibility: hidden;
 }
 
-nav ul li .user:hover {
+.navigation ul li .user:hover {
     background: #f1f0f4;
     border-radius: 5px;
     cursor: pointer;
 }
 
-nav ul li .user img {
+.navigation ul li .user img {
     width: 50px;
     border-radius: 50%;
 }
 
-nav ul li .user .name {
+.navigation ul li .user .name {
     position: relative;
-    bottom: 15px;
+    top: 15px;
 }
 
-nav ul li .user i {
+.navigation ul li .user i {
     position: relative;
-    bottom: 15px;
+    top: 15px;
 }
 /** Landing View **/
 
@@ -922,7 +922,7 @@ nav ul li .user i {
        left: 0;
 }
 
-nav ul li .user:hover {
+.navigation ul li .user:hover {
     background: #fff;
     border-radius: 5px;
     cursor: pointer;
@@ -949,7 +949,7 @@ nav ul li .user:hover {
     float: none;
 }
   
-nav { margin: 0; }
+.navigation { margin: 0; }
   
 .toggle + a,
 .menu { display: none; }
@@ -969,37 +969,37 @@ nav { margin: 0; }
   
 [id^=drop]:checked + ul { display: block; }
   
-nav ul li {
+.navigation ul li {
    display: block;
    width: 100%;
 }
   
-nav ul ul .toggle,
-nav ul ul a { padding: 0 40px; }
+.navigation ul ul .toggle,
+.navigation ul ul a { padding: 0 40px; }
   
-nav ul ul ul a { padding: 0 80px; }
+.navigation ul ul ul a { padding: 0 80px; }
   
-nav a:hover,
-nav ul ul ul a { background-color: #fff; }
+.navigation a:hover,
+.navigation ul ul ul a { background-color: #fff; }
   
-nav ul li ul li .toggle,
-nav ul ul a { background-color: #fff; }
+.navigation ul li ul li .toggle,
+.navigation ul ul a { background-color: #fff; }
   
-nav ul ul {
+.navigation ul ul {
     float: none;
     position: static;
     color: #ffffff;
 }
   
-nav ul ul li:hover > ul,
-nav ul li:hover > ul { display: none; }
+.navigation ul ul li:hover > ul,
+.navigation ul li:hover > ul { display: none; }
   
-nav ul ul li {
+.navigation ul ul li {
     display: block;
     width: 100%;
 }
   
-nav ul ul ul li { 
+.navigation ul ul ul li { 
     position: static;
 }
 
@@ -1061,7 +1061,7 @@ nav ul ul ul li {
   
 @media all and (max-width : 330px) {
   
-nav ul li {
+.navigation ul li {
     display: block;
     width: 94%;
 }  
