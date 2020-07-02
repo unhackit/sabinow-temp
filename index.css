@@ -6,6 +6,91 @@ body {
     margin-bottom: 0;
 }
 
+/* NEW CSS FOR NEW SLIDER */
+
+.custom-container {
+    width: 85%;
+    margin: 0 auto;
+}
+#introduction {  
+    height: 478px;
+    width: 100%;
+    background-size: cover;
+    background-image: url('../assets/images/landingbanner.svg');
+    position: relative;
+}
+
+#introduction .slider-one {
+    height: 478px;
+    width: 100%;
+    background-size: cover;
+    background-image: url('https://images.unsplash.com/photo-1505766358654-db278b02c108?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60');
+    position: relative;
+}
+#introduction .slider-two {
+    height: 478px;
+    width: 100%;
+    background-size: cover;
+    background-image: url('https://images.unsplash.com/photo-1505766358654-db278b02c108?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60');
+    position: relative;
+}
+#introduction .slider-three {
+    height: 478px;
+    width: 100%;
+    background-size: cover;
+    background-image: url('https://images.unsplash.com/photo-1505766358654-db278b02c108?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60');
+    position: relative;
+}
+
+
+.layer {
+    background:linear-gradient(to right, rgba(15, 7, 8, 0.5) 20.14%, rgba(0, 0, 0, 0.2) 70.83%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+#introduction .custom-container .slider {
+    padding: 100px 0;
+}
+
+#introduction  .custom-container div h1 {
+    color: #fff;
+    font-size: 48px;
+}
+
+#introduction .custom-container div p {
+    color: #fff;
+    font-size: 16px;
+}
+
+#introduction .custom-container .input-group {
+    width: 40%;
+}
+
+#introduction  .custom-container div input {
+    background:#fff;
+    border: none;
+    height: 50px;
+    border-radius: 7px 0 0 7px;
+}
+
+#introduction .custom-container div .input-group i {
+    font-size: 14px;
+    color: #E71C23;
+}
+
+#introduction .custom-container div .input-group-text {
+    background:#fff;
+    color: #A19F9D;
+    border: none;
+    border-radius: 0px 7px 7px 0;
+}
+
+
+
 /** ANIMATION KEYFRAMES **/
 /* defines the animation */
 @-webkit-keyframes fadeInUp {
@@ -925,15 +1010,15 @@ header .hidden {
        left: 0;
 }
 
+
+
 .navigation ul li .user:hover {
     background: #fff;
     border-radius: 5px;
     cursor: pointer;
 }
 
-.web-logo {
-    display: none;
-}
+
 
 .container-80 {
     width: 90%;
@@ -1006,6 +1091,9 @@ header .hidden {
     position: static;
 }
 
+.web-logo {
+    display: none!important;
+}
 
 #all__categories {
     margin-top: 250px;
@@ -2040,6 +2128,7 @@ header .hidden {
         position: relative;
         left: 350px;
     }
+    
 }
 
 @media screen and (max-width:370px){
@@ -2053,4 +2142,8 @@ header .hidden {
         padding: 10px;
         width: 100%!important;
     }
+}
+
+input:focus {
+    outline: none!important;
 }
