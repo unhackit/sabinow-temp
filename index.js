@@ -1,17 +1,26 @@
 
-let tab = document.querySelector('.user');
+let tab = document.querySelectorAll('.user');
 let dropdown = document.querySelector('.user-dropdown');
+
 
 document.querySelector('body').addEventListener('click', () => {
   dropdown.classList.add('hidden');
 })
 
-tab.addEventListener('click', (e) => {
+tab[0].addEventListener('click', (e) => {
   e.stopPropagation();
   if(dropdown.classList.contains('hidden')) return dropdown.classList.remove('hidden')
   
   dropdown.classList.add('hidden');
 })
+
+tab[1].addEventListener('click', (e) => {
+  e.stopPropagation();
+  if(dropdown.classList.contains('hidden')) return dropdown.classList.remove('hidden')
+  
+  dropdown.classList.add('hidden');
+})
+
 
 //Js to trigger animations
 document.addEventListener('scroll', function (e) {
