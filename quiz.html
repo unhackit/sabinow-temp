@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/36afc40636.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./index.css"/>
+    <title>Document</title>
+</head>
+<body>
+  <header id='header' style="z-index: 1001;">
+    <div class="custom-container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="/"><img src='./assets/sabilogo.svg' alt='logo' width="100%"/></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Go to Site</a>
+                </li>
+                <li class="nav-item">
+                   <div>
+                       <img src="./assets/nav-image.svg" />
+                       <span style="position: relative; bottom: 6px; font-weight: bold; margin-left: 4px;">Hi, Walter</span>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: #E71C23;">LOG OUT</a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+    </div>
+  </header>
+
+  <section id="main__content">
+    <div class="row">
+      <!-- SIDE BAR -->
+      <div class="col-md-3 col-lg-3 sidebar-column mr-0 pr-0">
+        <div class="sidebar">
+          <i class="fas fa-arrow-left pl-3 pr-3 mt-3"></i>
+          <h4 class="sidebar-heading pl-3 pr-3">Course Content</h4>
+          <div class="sidebar-content">
+            <div class="accordions">
+              <div class="accordion" id="accordionExample">
+                <div class="card">
+                  <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <div class="d-flex justify-content-between">
+                        <p class="section-header">Section 1: Getting Started</p>
+                        <p><i class="fas fa-angle-up"></i></p>
+                    </div>
+                  </div>
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                      <div class="container">
+                        <a href="#">
+                          <div class="course-content mb-3">
+                            <i class="far fa-play-circle"></i>
+                            <div class="content-description">
+                              <p>Introduction to Course</p>
+                              <span>4 Mins</span>
+                            </div>
+                          </div>
+                        </a>
+                        <a href="#">
+                          <div class="course-content mb-3">
+                            <i class="far fa-file-alt"></i>
+                            <div class="content-description">
+                              <p>Article 1</p>
+                              <span>Copywriting Foundations</span>
+                            </div>
+                          </div>
+                        </a>
+                        <a href="#">
+                          <div class="course-content mb-3">
+                            <i class="far fa-question-circle"></i>
+                            <div class="content-description">
+                              <p>Quiz 1</p>
+                              <span>4 Mins</span>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+                <div class="card">
+                  <div class="card-header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                    <div class="d-flex justify-content-between">
+                        <p class="section-header">Section 2: Your Foundation</p>
+                        <p><i class="fas fa-angle-down"></i></p>
+                    </div>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                      <div class="container">
+                        <a href="#">
+                          <div class="course-content mb-3">
+                            <i class="far fa-play-circle"></i>
+                            <div class="content-description">
+                              <p>Introduction to Course</p>
+                              <span>4 Mins</span>
+                            </div>
+                          </div>
+                        </a>
+                        <a href="#">
+                          <div class="course-content mb-3">
+                            <i class="far fa-file-alt"></i>
+                            <div class="content-description">
+                              <p>Article 1</p>
+                              <span>Copywriting Foundations</span>
+                            </div>
+                          </div>
+                        </a>
+                        <a href="#">
+                          <div class="course-content mb-3">
+                            <i class="far fa-question-circle"></i>
+                            <div class="content-description">
+                              <p>Quiz 1</p>
+                              <span>4 Mins</span>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>                      
+                <div class="card">
+                  <div class="card-header" id="headingThree" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                    <div class="d-flex justify-content-between">
+                        <p class="section-header">Section 3: Your Business</p>
+                        <p><i class="fas fa-angle-down"></i></p>
+                    </div>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                      <div class="container">
+                        <a href="#">
+                          <div class="course-content mb-3">
+                            <i class="far fa-play-circle"></i>
+                            <div class="content-description">
+                              <p>Introduction to Course</p>
+                              <span>4 Mins</span>
+                            </div>
+                          </div>
+                        </a>
+                        <a href="#">
+                          <div class="course-content mb-3">
+                            <i class="far fa-file-alt"></i>
+                            <div class="content-description">
+                              <p>Article 1</p>
+                              <span>Copywriting Foundations</span>
+                            </div>
+                          </div>
+                        </a>
+                        <a href="#">
+                          <div class="course-content mb-3">
+                            <i class="far fa-question-circle"></i>
+                            <div class="content-description">
+                              <p>Quiz 1</p>
+                              <span>4 Mins</span>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+                <div class="card">
+                  <div class="card-header" id="headingFour" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                    <div class="d-flex justify-content-between">
+                        <p class="section-header">Section 4: Advertising</p>
+                        <p><i class="fas fa-angle-down"></i></p>
+                    </div>
+                  </div>
+                  <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                    <div class="card-body">
+                      <div class="container">
+                        <a href="#">
+                          <div class="course-content mb-3">
+                            <i class="far fa-play-circle"></i>
+                            <div class="content-description">
+                              <p>Introduction to Course</p>
+                              <span>4 Mins</span>
+                            </div>
+                          </div>
+                        </a>
+                        <a href="#">
+                          <div class="course-content mb-3">
+                            <i class="far fa-file-alt"></i>
+                            <div class="content-description">
+                              <p>Article 1</p>
+                              <span>Copywriting Foundations</span>
+                            </div>
+                          </div>
+                        </a>
+                        <a href="#">
+                          <div class="course-content mb-3">
+                            <i class="far fa-question-circle"></i>
+                            <div class="content-description">
+                              <p>Quiz 1</p>
+                              <span>4 Mins</span>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- MAIN VIEW-->
+      <div class="col-md-12 col-lg-9 ml-0 pl-0">
+        <!--sub navigation-->
+        <div class="sub-nav">
+          <div class="content">
+            <p>What is UX ?</p>
+          </div>
+        </div>
+
+        <!--content-->
+        <div>
+            <div class="custom-container-90">
+              <!--Display course - video, article, or quiz-->
+              <div class="course-display">
+                <div class="course-display-content">
+                    <div class="custom-container">
+                        <div class="text-right">
+                            <p>Skip Question</p>
+                        </div>
+                        <div>
+                            <p>Question 1:</p>
+                            <p> What can you do to help increase sales and build credibility?</p>
+                            <div class="option">
+                                <input type="radio" name="option"> <label>Sell till you drop</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="option"> <label>Sell till you drop</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="option"> <label>Sell till you drop</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="option"> <label>Sell till you drop</label>
+                            </div>
+                        </div>
+                        <div class="text-right mt-4">
+                            <p>Next Question</p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="course-details-section">
+                <div class="tabs">
+                    <div class="tab course-tab">
+                      <p>Course</p>
+                    </div>
+                    <div class="tab overview-tab">
+                      <p>Overview</p>
+                    </div>
+                    <div class="tab notes-tab">
+                      <p>Notes</p>
+                    </div>
+                    <div class="tab announcements-tab">
+                      <p>Announcements</p>
+                    </div>
+                </div>
+
+                <div class="course-details-content">
+                  <!--Courses in mobile view-->
+                  <div class="accordions mobile-accordions">
+                    <div class="accordion" id="accordionExample">
+                      <div class="card">
+                        <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          <div class="d-flex justify-content-between">
+                              <p class="section-header">Section 1: Getting Started</p>
+                              <p><i class="fas fa-angle-up"></i></p>
+                          </div>
+                        </div>
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                          <div class="card-body">
+                            <div class="container">
+                              <a href="#">
+                                <div class="course-content mb-3">
+                                  <i class="far fa-play-circle"></i>
+                                  <div class="content-description">
+                                    <p>Introduction to Course</p>
+                                    <span>4 Mins</span>
+                                  </div>
+                                </div>
+                              </a>
+                              <a href="#">
+                                <div class="course-content mb-3">
+                                  <i class="far fa-file-alt"></i>
+                                  <div class="content-description">
+                                    <p>Article 1</p>
+                                    <span>Copywriting Foundations</span>
+                                  </div>
+                                </div>
+                              </a>
+                              <a href="#">
+                                <div class="course-content mb-3">
+                                  <i class="far fa-question-circle"></i>
+                                  <div class="content-description">
+                                    <p>Quiz 1</p>
+                                    <span>4 Mins</span>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div> 
+                      <div class="card">
+                        <div class="card-header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                          <div class="d-flex justify-content-between">
+                              <p class="section-header">Section 2: Your Foundation</p>
+                              <p><i class="fas fa-angle-down"></i></p>
+                          </div>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                          <div class="card-body">
+                            <div class="container">
+                              <a href="#">
+                                <div class="course-content mb-3">
+                                  <i class="far fa-play-circle"></i>
+                                  <div class="content-description">
+                                    <p>Introduction to Course</p>
+                                    <span>4 Mins</span>
+                                  </div>
+                                </div>
+                              </a>
+                              <a href="#">
+                                <div class="course-content mb-3">
+                                  <i class="far fa-file-alt"></i>
+                                  <div class="content-description">
+                                    <p>Article 1</p>
+                                    <span>Copywriting Foundations</span>
+                                  </div>
+                                </div>
+                              </a>
+                              <a href="#">
+                                <div class="course-content mb-3">
+                                  <i class="far fa-question-circle"></i>
+                                  <div class="content-description">
+                                    <p>Quiz 1</p>
+                                    <span>4 Mins</span>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>                      
+                      <div class="card">
+                        <div class="card-header" id="headingThree" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                          <div class="d-flex justify-content-between">
+                              <p class="section-header">Section 3: Your Business</p>
+                              <p><i class="fas fa-angle-down"></i></p>
+                          </div>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                          <div class="card-body">
+                            <div class="container">
+                              <a href="#">
+                                <div class="course-content mb-3">
+                                  <i class="far fa-play-circle"></i>
+                                  <div class="content-description">
+                                    <p>Introduction to Course</p>
+                                    <span>4 Mins</span>
+                                  </div>
+                                </div>
+                              </a>
+                              <a href="#">
+                                <div class="course-content mb-3">
+                                  <i class="far fa-file-alt"></i>
+                                  <div class="content-description">
+                                    <p>Article 1</p>
+                                    <span>Copywriting Foundations</span>
+                                  </div>
+                                </div>
+                              </a>
+                              <a href="#">
+                                <div class="course-content mb-3">
+                                  <i class="far fa-question-circle"></i>
+                                  <div class="content-description">
+                                    <p>Quiz 1</p>
+                                    <span>4 Mins</span>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div> 
+                      <div class="card">
+                        <div class="card-header" id="headingFour" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                          <div class="d-flex justify-content-between">
+                              <p class="section-header">Section 4: Advertising</p>
+                              <p><i class="fas fa-angle-down"></i></p>
+                          </div>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                          <div class="card-body">
+                            <div class="container">
+                              <a href="#">
+                                <div class="course-content mb-3">
+                                  <i class="far fa-play-circle"></i>
+                                  <div class="content-description">
+                                    <p>Introduction to Course</p>
+                                    <span>4 Mins</span>
+                                  </div>
+                                </div>
+                              </a>
+                              <a href="#">
+                                <div class="course-content mb-3">
+                                  <i class="far fa-file-alt"></i>
+                                  <div class="content-description">
+                                    <p>Article 1</p>
+                                    <span>Copywriting Foundations</span>
+                                  </div>
+                                </div>
+                              </a>
+                              <a href="#">
+                                <div class="course-content mb-3">
+                                  <i class="far fa-question-circle"></i>
+                                  <div class="content-description">
+                                    <p>Quiz 1</p>
+                                    <span>4 Mins</span>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div> 
+                    </div>
+                  </div>
+
+                    <div class="custom-container-70">
+                      <!-- Description / Overviwe-->
+                      <div class="overview mt-4 hidden"> 
+                        <h4>About this Course</h4>
+                        <p>A comprehensive guide to building an online business and marketing it in order to gain traffic and ultimately sales.</p>
+                        <div class="line-break"></div>
+                        <h4>Course includes</h4>
+                        <p><img src="./assets/1.svg"/> 33.5 hours on-demand video</p>
+                        <p><img src="./assets/2.svg"/> 41 Articles</p>
+                        <p><img src="./assets/3.svg"/> 151 downloadable resources</p>
+                        <p><img src="./assets/4.svg"/> Full lifetime access</p>
+                        <div class="line-break"></div>
+                        <h4>What you’ll learn </h4>
+                        <div class="d-flex justify-content-start">
+                            <i class="far fa-check-circle" style="font-size: 20px;position: relative;"></i>
+                            <p class="ml-2">Develop modern, complex, responsive and scalable web applications with Angular 9 Develop modern, complex, responsive and scalable web applications with Angular 9 </p>
+                        </div>
+                        <div class="d-flex justify-content-start">
+                          <i class="far fa-check-circle" style="font-size: 20px;position: relative;"></i>
+                          <p class="ml-2"> Use the gained, deep understanding of the Angular fundamentals to quickly establish yourself as a frontend developer </p>
+                        </div>
+                        <div class="d-flex justify-content-start">
+                            <i class="far fa-check-circle" style="font-size: 20px;position: relative;"></i>
+                            <p class="ml-2">Create single-page applications with one of the most modern JavaScript frameworks out there </p>
+                        </div>
+                        <div class="d-flex justify-content-start">
+                          <i class="far fa-check-circle" style="font-size: 20px;position: relative;"></i>
+                          <p class="ml-2">Develop modern, complex, responsive and scalable web applications with Angular 9 Develop modern, complex, responsive and scalable web applications with Angular 9 </p>
+                        </div>
+                        <div class="line-break"></div>
+                        <h4>Description</h4>
+                        <p>This course starts from scratch, you neither need to know Angular 1 nor Angular 2!</p>
+                        <p>Angular 9 simply is the latest version of Angular 2, you will learn this amazing framework from the ground up in this course!</p>
+                        <p>Join the most comprehensive, popular and bestselling Angular course on Udemy and benefit not just from a proven course </p>
+                        <div class="line-break"></div>
+                        <h4>Requirements</h4>
+                        <div class="d-flex justify-content-start">
+                          <i class="far fa-check-circle" style="font-size: 20px;position: relative;"></i>
+                          <p class="ml-2"> Understanding of building scalable models using dexterous techniques</p>
+                        </div>
+                        <div class="d-flex justify-content-start">
+                          <i class="far fa-check-circle" style="font-size: 20px;position: relative;"></i>
+                          <p class="ml-2">Develop modern, complex, responsive and scalable web applications with Angular 9 Develop modern, complex, responsive and scalable web applications with Angular 9 </p>
+                        </div>
+                        <div class="d-flex justify-content-start">
+                          <i class="far fa-check-circle" style="font-size: 20px;position: relative;"></i>
+                          <p class="ml-2"> Understanding of building scalable models using dexterous techniques</p>
+                        </div>
+                      </div>
+
+                      <div class="notes mt-5 hidden">
+                        <!--NOTES-->
+                        <label>Create Note</label>
+                        <small style="float: right;">1000 characters</small>
+                        <textarea rows='10' class="form-control"></textarea>
+                        <div class="mt-2 text-right">
+                          <button class="btn cancel">Cancel</button>
+                          <button class="btn save">Save</button>
+                        </div>
+
+                        <div class="saved__notes mt-5">
+                            <div>
+                              <div class="note-title-container">
+                                <p class="course-title">1. Getting Started: <span>Introduction to Course</span></p>
+                                <div>
+                                  <i class="far fa-edit"></i>
+                                  <i class="far fa-trash-alt" style="color: #E71C23;"></i>
+                                </div>
+                              </div>
+                              <div class="note">
+                                A comprehensive guide to building an online business and marketing it in order to gain traffic and ultimately sales.
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="announcements mt-4">
+                          <div class="announcement__poster">
+                              <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
+                              <div>
+                                <p>Spence Teach</p>
+                                <p>Posted an announcement 3days ago </p>
+                              </div>
+                          </div>
+                          <div class="mt-4">
+                            <h5>Welcome to this Course</h5>
+                            <p class="announcement-body">Digiday is running an anonymous “Confessions of a Copywriter” interview, where the pain of being misunderstood and devalued that many copywriters feel comes shining through. Sometimes I’ll get a brief from the client and project management that is like, ‘They want it to say this but they thought it sounded boring so they want you to zhuzh it.’ I’m not a zhuzher. I’m a writer. The client doesn’t take photoshop files and change them. We don’t give them access to that. So why am I getting revisions from clients that say, ‘Just change it to say this.’ You’re messing with my work, and it’s not treated with the same sort of value as the art director’s [work]. Tampering with the copy is as common as daybreak, no question, and it’s annoying. But it’s not correct to call the work yours. Copywriters are paid performers. Whatever we create is the client’s to do with what they will. The challenge is to successfully negotiate the copy through from concept to production. The copywriter caretakes the ideas and the execution of the ideas, along with her or his art director partner.</p>
+                          </div>
+                      </div>
+
+                    </div>
+                </div>
+
+                <div class="footer-section mt-5">
+                  <p><i class="fas fa-download"></i> Download Supplemental resources</p>
+                  <div class="line-break"></div>
+                  <p>© 2020 SabiNow, Inc. All rights reserved.</p>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="./index.js"></script>
+<script>
+  $(document).ready(function(){
+        $(".card-header").on('click', function(){
+            if($(this).next(".collapse").hasClass('show')){
+                $(this).find('.fas').addClass("fa-angle-down")
+                $(this).find('.fas').removeClass("fa-angle-up")
+            }
+            else {
+                $(this).find('.fas').removeClass("fa-angle-down")
+                $(this).find('.fas').addClass("fa-angle-up")
+            }
+            
+        });
+    });
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
