@@ -8,21 +8,48 @@ let overview = document.querySelector('.overview');
 let announcements = document.querySelector('.announcements');
 let notes = document.querySelector('.notes');
 
-overviewTab.classList.add('active');
+let selectors = document.querySelectorAll('[data-type]');
+
+let VideoView = document.querySelector('.video-view');
+let QuizView = document.querySelector('.quiz-view');
+let ArticleView = document.querySelector('.article-view');
 
 
-overview.classList.remove('hidden')
+//the content of the announcement , notes and overview
+overviewTab.classList.add('active'); //overview tab set to active
+
+overview.classList.remove('hidden');
 accordions.classList.add('hidden');
 notes.classList.add('hidden');
 announcements.classList.add('hidden');
 
+QuizView.classList.add('hidden');
+ArticleView.classList.add('hidden');
 
-console.log(overview)
+const showVideo = (url, poster) => {
+    VideoView.poster = poster; //add the poster
+    document.getElementsByTagName('source')[0].src = url //add the url
+    VideoView.load(); //load the video
+    //hide other views
+    hideBlock(QuizView, ArticleView);
+    //show Video 
+    VideoView.classList.remove('hidden');
+}
+
+const showArticle = (article, title, content) => {
+    document.querySelector('._article').textContent = article// set article 
+    document.querySelector('._article_title').textContent = title; //set title
+    document.querySelector('._article_content').textContent = content // set content
+    //hide other views
+    hideBlock(VideoView, QuizView);
+    //show article
+    ArticleView.classList.remove('hidden');
+}
 
 const hideBlock = (a, b, c) => {
-    a.classList.add('hidden')
-    b.classList.add('hidden')
-    c.classList.add('hidden')
+    a ? a.classList.add('hidden') : '';
+    b ? b.classList.add('hidden') : '';
+    c ? c.classList.add('hidden') : '';
 }
 
 const setInactive = (a,b, c) => {

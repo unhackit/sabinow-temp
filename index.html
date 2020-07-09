@@ -56,7 +56,7 @@
                   <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                     <div class="card-body">
                       <div class="container">
-                        <a href="#">
+                        <a href="#" onclick="showVideo('https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4', 'https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg' )"> <!--takes in the url and poster link-->
                           <div class="course-content mb-3">
                             <i class="far fa-play-circle"></i>
                             <div class="content-description">
@@ -65,7 +65,7 @@
                             </div>
                           </div>
                         </a>
-                        <a href="#">
+                        <a href="#" onclick="showArticle('Article 2', 'Foundations', 'this is article 2')" > <!-- takes in article stage, title, and content-->
                           <div class="course-content mb-3">
                             <i class="far fa-file-alt"></i>
                             <div class="content-description">
@@ -74,7 +74,7 @@
                             </div>
                           </div>
                         </a>
-                        <a href="#">
+                        <a href="#" data-type="quiz">
                           <div class="course-content mb-3">
                             <i class="far fa-question-circle"></i>
                             <div class="content-description">
@@ -97,7 +97,7 @@
                   <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                     <div class="card-body">
                       <div class="container">
-                        <a href="#">
+                        <a href="#" data-type="video">
                           <div class="course-content mb-3">
                             <i class="far fa-play-circle"></i>
                             <div class="content-description">
@@ -106,7 +106,7 @@
                             </div>
                           </div>
                         </a>
-                        <a href="#">
+                        <a href="#" data-type="article">
                           <div class="course-content mb-3">
                             <i class="far fa-file-alt"></i>
                             <div class="content-description">
@@ -115,7 +115,7 @@
                             </div>
                           </div>
                         </a>
-                        <a href="#">
+                        <a href="#" data-type="quiz">
                           <div class="course-content mb-3">
                             <i class="far fa-question-circle"></i>
                             <div class="content-description">
@@ -228,9 +228,10 @@
         <div>
             <div class="custom-container-90">
               <!--Display course - video, article, or quiz-->
-              <div class="course-display">
-                <video controls crossorigin width="100%" height="100%" playsinline poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg">
-                  <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" type="video/mp4" size="576">
+              <div class="course-display ">
+                <!-- videos -->
+                <video class='video-view' controls crossorigin width="100%" height="100%" playsinline >
+                  <source type="video/mp4" size="576">
                    
                   
                   <track kind="captions" label="English" srclang="en" src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.en.vtt"
@@ -239,6 +240,49 @@
                   
                   <a href="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" download>Download</a>
                 </video>
+
+                <script>
+                  document.getElementsByTagName('source')[0].src = "https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4";
+                  document.querySelector('.video-view').poster = "https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg";
+                  document.querySelector('.video-view').load();
+                </script>
+                <!--quiz-->
+                <div class="course-display-content quiz-view">
+                  <div class="custom-container">
+                      <div class="text-right">
+                          <p>Skip Question</p>
+                      </div>
+                      <div>
+                          <p>Question 1:</p>
+                          <p> What can you do to help increase sales and build credibility?</p>
+                          <div class="option">
+                              <input type="radio" name="option"> <label>Sell till you drop</label>
+                          </div>
+                          <div class="option">
+                              <input type="radio" name="option"> <label>Sell till you drop</label>
+                          </div>
+                          <div class="option">
+                              <input type="radio" name="option"> <label>Sell till you drop</label>
+                          </div>
+                          <div class="option">
+                              <input type="radio" name="option"> <label>Sell till you drop</label>
+                          </div>
+                      </div>
+                      <div class="text-right mt-4">
+                          <p>Next Question</p>
+                      </div>
+                  </div>
+              </div>
+
+              <!--article-->
+
+                <div class="course-display-content article-view">
+                  <div class="custom-container">
+                      <p class="_article">Article 1:</p>
+                      <h4 class="_article_title">Copywrite Foundations</h4>
+                      <p class="_article_content">Digiday is running an anonymous “Confessions of a Copywriter” interview, where the pain of being misunderstood and devalued that many copywriters feel comes shining through. Sometimes I’ll get a brief from the client and project management that is like. </p>
+                  </div>
+                </div>
               </div>
 
               <div class="course-details-section">
@@ -271,7 +315,7 @@
                         <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                           <div class="card-body">
                             <div class="container">
-                              <a href="#">
+                              <a href="#" data-type="video">
                                 <div class="course-content mb-3">
                                   <i class="far fa-play-circle"></i>
                                   <div class="content-description">
@@ -280,7 +324,7 @@
                                   </div>
                                 </div>
                               </a>
-                              <a href="#">
+                              <a href="#" data-type="article">
                                 <div class="course-content mb-3">
                                   <i class="far fa-file-alt"></i>
                                   <div class="content-description">
@@ -289,7 +333,7 @@
                                   </div>
                                 </div>
                               </a>
-                              <a href="#">
+                              <a href="#" data-type="quiz">
                                 <div class="course-content mb-3">
                                   <i class="far fa-question-circle"></i>
                                   <div class="content-description">
