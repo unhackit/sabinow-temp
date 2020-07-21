@@ -1052,10 +1052,14 @@ header .hidden {
 /** footer **/
 
 #footer {
-    background: #0F0708;
+    background: #0F0708!important;
     width: 100%;
     padding: 50px 0;
     color: #fff;
+    height: 100%;
+}
+footer {
+    background: #000!important;
 }
 
 #footer hr {
@@ -1103,7 +1107,7 @@ header .hidden {
 #footer .copyright{
     text-align: center;
     font-size: 16px;
-    margin: 20px 0;
+    margin: 20px 0 0 0;
  }
 
 /* Media Queries
