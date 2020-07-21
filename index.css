@@ -950,6 +950,7 @@ header .hidden {
 #review .instructors__content {
     display: flex;
     justify-content: space-between;
+    margin-top: 150px;
 }
 
 #review .instructors__content .description {
