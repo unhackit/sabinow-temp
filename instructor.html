@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabinow</title>
+    
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script src="https://kit.fontawesome.com/36afc40636.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href='./index.css'>
+    <link rel="stylesheet" href='./instructor.css'>
+</head>
+<body>
+    <section id="header" class="pt-2 pb-2">
+        <header class="container-80-left">
+            <div class="navigation">
+                <div class="mobile-menu">
+                    <div class="mobile-left">
+                        <img src="./assets/logo.svg"/>
+                    </div>
+                    <div class="mobile-right text-right">
+                        <li><a href="#"><i class="far fa-bell" style="font-size: 20px;color:#dc3545"></i> <span class="badge-icon">0</span></a></li>
+                        <li class="mb-2"><a href="#"><img src='./assets/cart.svg' class="mb-1 mr-1"><span class="cart-text">Cart</span> <span class="badge-icon">0</span></a></li>
+                        <li>
+                            <div class="user d-flex align-content-center " >
+                                <img src='https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/demo-3/img/user-13.005c80e1.jpg' class="mr-2"/>
+                                <div>
+                                    <span class="name">William</span>
+                                    <i class="fas fa-angle-down"></i>
+                                </div>
+                            </div>
+                        </li>
+                    </div>
+                </div>
+                <div class="mobile-navigation">
+                    <div class="mobile-nav-content">
+                        <p><i class="fas fa-map"></i> Business</p>
+                        <p><i class="fas fa-map"></i> Management</p>
+                        <p><i class="fas fa-map"></i> Engineering</p>
+                        <p><i class="fas fa-map"></i> Marketing</p>
+                        <p><i class="fas fa-map"></i> Business</p>
+                        <p><i class="fas fa-map"></i> Management</p>
+                        <p><i class="fas fa-map"></i> Engineering</p>
+                        <p><i class="fas fa-map"></i> Marketing</p>
+                    </div>
+                </div>
+                <ul class="menu">
+                <li class="web-logo"><a href="index.html"><img src="./assets/logo.svg"></a></li>
+                <span class="web-span">
+                    <li> 
+                        <!-- First Tier Drop Down -->
+                        <label for="drop-2" class="toggle">Programs <i class="fas fa-angle-down"></i></label>
+                            <a href="#">Programs</a>
+                            <input type="checkbox" id="drop-2"/>
+                            <ul>
+                            <li><a href="#">Business </a></li>
+                            <li><a href="#">Management</a></li>
+                            <li> 
+                            <!-- Second Tier Drop Down -->
+                            <label for="drop-3" class="toggle">Engineering <i class="fas fa-angle-down"></i></label>
+                            <a href="#">Engineering</a>
+                            <input type="checkbox" id="drop-3"/>
+                            <ul>
+                            <li><a href="#">HTML/CSS</a></li>
+                            <li><a href="#">jQuery</a></li>
+                            <li><a href="#">Python</a></li>
+                            </ul>
+                        </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Become An Instructor</a></li>
+                    <li><a href="#"><i class="far fa-bell" style="font-size: 20px;color:#dc3545"></i> <span class="badge-icon">0</span></a></li>
+                    <li><a href="#"><img src='./assets/cart.svg' class="mb-2">Cart <span class="badge-icon">0</span></a></li>
+                    <li>
+                        <div class="user d-flex align-content-center ">
+                            <img src='https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/demo-3/img/user-13.005c80e1.jpg'/>
+                            <div>
+                                <span class="name">William</span>
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- <li><a href="#"><button class="login__button">LOG IN</button></a></li>
+                    <li><a href="#"><button class="register__button">SIGN UP</button></a></li> -->
+                </span style="margin-left: auto;">
+                </ul>
+            </div>
+            <div class="user-dropdown hidden">
+                <ul>
+                    <li><a href='/'>My Courses</a></li>
+                    <li><a href='/'>My Wishlist</a></li>
+                    <li><a href='/'>Purchase History</a></li>
+                    <li><a href='/'>User Profile</a></li>
+                    <li><a href='/'>Become an Instructor</a></li>
+                    <hr/>
+                    <button class="logout">LOGOUT</button>
+                </ul>
+            </div>
+        </header>
+    </section>
+
+    <section id="introduction">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active slider-one">
+                <div class="layer">
+                    <div class="custom-container">
+                        <div class="slider">
+                            <h1>Learn on your <br/> schedule</h1>
+                            <p>Study any topic, any time. Explore from thousands of topics</p>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                <div class="input-group-append">
+                                    <span class="input-group-text" id="basic-addon2"><i class="fas fa-search"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item slider-two">
+                <div class="layer">
+                    <div class="custom-container">
+                        <div class="slider">
+                            <h1>Learn on your <br/> schedule</h1>
+                            <p>Study any topic, any time. Explore from thousands of topics</p>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                <div class="input-group-append">
+                                    <span class="input-group-text" id="basic-addon2"><i class="fas fa-search"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item slider-three">
+                <div class="layer">
+                    <div class="custom-container">
+                        <div class="slider">
+                            <h1>Learn on your <br/> schedule</h1>
+                            <p>Study any topic, any time. Explore from thousands of topics</p>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                <div class="input-group-append">
+                                    <span class="input-group-text" id="basic-addon2"><i class="fas fa-search"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <a class="carousel-control-prev" style="left: -20px;" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+          </div>
+    </section>
+
+    <section id="instructor__what__we__do">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="title">We are changing lives through learning </h1>
+                    <p class="description"> SabiNow has a mission to ensure different people from different work of like have something to take away for provides accessible training to professionals, employees, students, entrepreneurs and managers in private or government owned organizations. We differentiate ourselves through quality yet affordable services. </p>
+                </div>
+                <div class="col-md-6 text-center">
+                    <div class="image-space"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="instructor__become">
+        <div class="container">
+            <div class="heading text-center">
+                <h1>Become an Instructor</h1>
+                <div class="line"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="instructor__card">
+                        <div class="img-space"></div>
+                        <h1 class="title">Register as an Instructor </h1>
+                        <p class="description">Create an account with SabiNow and Apply as an instructor by filling the form adequately</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="instructor__card">
+                        <div class="img-space"></div>
+                        <h1 class="title">Approval of your account  </h1>
+                        <p class="description">Applicants wait while the application is thoroughly reviewed for subsequent approval. This may take up to two (2) business days.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="instructor__card">
+                        <div class="img-space"></div>
+                        <h1 class="title">Develop Courses in simple and easy steps </h1>
+                        <p class="description">Create an account with SabiNow and Apply as an instructor by filling the form adequately</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="instructor__card">
+                        <div class="img-space"></div>
+                        <h1 class="title">Start Earning from your courses </h1>
+                        <p class="description">As soon as your course is live and purchases are made, you start to earn </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heading text-center">
+                <button class="btn register-btn">Get Started</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="instructor__what__we__do">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="title"> Criteria for becoming an instructor </h1>
+                    <p class="description"> At SabiNow, you can teach what you are good at and impact as many lives as possible. Most topics are acceptable with the exception of a few that are seen as harmful and offensive to our audience. See list below</p>
+                </div>
+                <div class="col-md-6 text-center">
+                    <div class="image-space"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="instructor__criteria">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mt-4">
+                    <p><span class="box"></span> Content that negates or goes against the laws of the country</p>
+                    <p><span class="box"></span> Inappropriate or dangerous content</p>
+                    <p><span class="box"></span> Sexually explicit content</p>
+                    <p><span class="box"></span> Content relating to making, handling or using weapons </p>
+                </div>
+                <div class="col-md-6 mt-4">
+                    <p><span class="box"></span> Content promoting harm to people or violence</p>
+                    <p><span class="box"></span> Racist, Hate speech or discriminatory language  </p>
+                    <p><span class="box"></span> Content enabling, aiding or abetting illegal or unethical behavior</p>
+                    <p><span class="box"></span> Content that is intentionally misleading, fraudulent or deceptive</p>
+                </div>
+                <div class="col-md-6 mt-4">
+                    <p class="reserve"> We reserve the right to add to and modify this list at any time. If you see a topic that you believe should not be on the platform, please email admin@sabinow.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="instructor__requirements">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="image-space"></div>
+                </div>
+                <div class="col-md-6">
+                    <div class="requirements__content">
+                        <h2>An intending instructor should meet the following requirements:</h2>
+                        <p><span class="box"></span> Content promoting harm to people or violence</p>
+                        <p><span class="box"></span> Racist, Hate speech or discriminatory language  </p>
+                        <p><span class="box"></span> Content enabling, aiding or abetting illegal or unethical behavior</p>
+                        <p><span class="box"></span> Content that is intentionally misleading, fraudulent or deceptive</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="instructor__criteria">
+        <div class="container">
+            <h1>An intending instructor should meet the following requirements:</h1>
+            <div class="row">
+                <div class="col-md-6 mt-4">
+                    <p><span class="box"></span> HD Video</p>
+                    <p><span class="box"></span> Good audio quality</p>
+                    <p><span class="box"></span> Minimum of 5 modules</p>
+                </div>
+                <div class="col-md-6 mt-4">
+                    <p><span class="box"></span> Total video content should be a minimum of 30 minutes</p>
+                    <p><span class="box"></span> Free courses must have less than 2 hours of video content  </p>
+                </div>
+                <div class="col-md-6 mt-4">
+                    <p class="reserve"> We advise that you captivate the interest of students with a high level of engagement, very helpful supplemental resources and creative or innovative approaches to presenting the course material. </p>
+                    <p class="reserve">Please note that our marketplace model enables you retain all the rights to your content when you upload your course on our platform. It only grants us a license as hosts and we make it available to our users, we advertise your course on our platform and on third party services.</p>
+                    <button class="btn register-btn mt-3 mb-3">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="support">
+        <div class="container">
+            <div class="content">
+                <h1>Need help ?</h1>
+                <h1>Contact Instructor Support</h1>
+                <p>We are here to help you get started as an Instructor. Reach out to our 24/7 instructor support team with the button below and a representative will contact you as soon as possible.</p>
+                <button class="btn register-btn mt-3 mb-3">Get Support</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="instructor__become">
+        <div class="container">
+            <div class="heading text-center">
+                <h1>Become an Instructor</h1>
+                <div class="line"></div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="footer">
+        <footer>
+            <div class="container-80">
+                <div class="footer__links">
+                    <div class="main__links">
+                        <p>Sabinow</p>
+                        <a href="/">About Us</a>
+                        <a href="/">Contact Us</a>
+                        <a href="/">Terms & Privacy</a>
+                        <a href="/">FAQs</a>
+                    </div>
+                    <div class="main__links">
+                        <p>Careers</p>
+                        <a href="/">Become an Instructor</a>
+                        <a href="/">Work with Us</a>
+                    </div>
+                    <div class="main__links">
+                        <p>Other</p>
+                        <a href="/">Help & Support</a>
+                        <a href="/">Payments</a>
+                        <a href="/">Blog</a>
+                    </div>
+                    <div class="social__links">
+                        <a href='/'><i class="fab fa-facebook-square"></i></a>
+                        <a href='/'><i class="fab fa-instagram"></i></a>
+                        <a href='/'><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <hr/>
+                <div class="copyright">
+                    <p class="m-0 pt-2 pb-2">© 2020 SabiNow, Inc. All rights reserved.</
+                </div>
+            </div>
+        </footer>
+    </section>
+    <script src='./index.js'></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

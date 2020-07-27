@@ -1,0 +1,154 @@
+#instructor__what__we__do {
+    margin: 70px 0;
+}
+
+#instructor__what__we__do .title {
+    color: #323130;
+    font-size: 38px;
+    margin: 20px 0;
+}
+
+#instructor__what__we__do .description {
+    color: #605E5C;
+    font-size: 17px;
+    line-height: 32px;
+}
+
+#instructor__what__we__do .image-space {
+    height: 300px;
+    background: #E0E0E0;
+    border-radius: 17px;
+    width: 300px;
+    margin:  auto;
+}   
+
+#instructor__become {
+    margin: 90px 0;
+}
+#instructor__become .heading {
+    margin: 40px 0;
+}
+
+#instructor__become .heading h1{
+    color: #323130;
+    font-weight: 500;
+    font-size: 37px;
+}
+
+.register-btn {
+    background: #E71C23;
+    border-radius: 6px;
+    color: #fff;
+    padding: 10px 40px;
+}
+
+#instructor__become .line {
+    background: #E71C23;
+    height: 5px;
+    width: 10em;
+    margin: 0 auto;
+}
+
+#instructor__become .instructor__card {
+    background: #FFFFFF;
+    border: 1px solid #C7C7C7;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 10px;
+    height: 368px;
+}
+
+#instructor__become .instructor__card .img-space {
+    width: 88px;
+    height: 88px;
+    background: #C4C4C4;
+}
+
+#instructor__become .instructor__card .title {
+    font-size: 22px;
+    color: #000;
+    margin: 25px 0;
+    font-weight: 500;
+}
+
+#instructor__criteria p {
+    font-size: 15px;
+}
+
+#instructor__criteria span {
+    border: 1px solid #E71C23;
+    background: #E71C23;
+    padding: 8px;
+    height: 10px;
+    position: relative;
+    margin-right: 10px;
+    box-shadow: 3px 3px 0px #F7C7C9;;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+#instructor__criteria h1 {
+    font-size: 30px;
+    width: 45%;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+#instructor__criteria p {
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+#instructor__criteria p.reserve {
+    color: #605E5C;
+}
+
+#instructor__requirements {
+    margin: 50px 0;
+}
+
+#instructor__requirements .image-space {
+    height: 350px;
+    background: #E0E0E0;
+    border-radius: 17px;
+    width: 70%;
+}
+
+#instructor__requirements .requirements__content h2 {
+    margin: 20px 0;
+}
+
+#instructor__requirements .requirements__content p {
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+#instructor__requirements .requirements__content span{
+    border: 1px solid #E71C23;
+    background: #E71C23;
+    padding: 8px;
+    height: 10px;
+    position: relative;
+    margin-right: 10px;
+    box-shadow: 3px 3px 0px #F7C7C9;;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+#support {
+    background: #F7F7F7;
+    height: 426px;
+    margin: 40px 0;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+#support .content{
+    width: 50%;
+}
+
+#support .content p {
+    line-height: 30px;
+}
