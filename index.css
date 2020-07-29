@@ -4,6 +4,7 @@ body {
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 0;
+    z-index: 1;
 }
 
 /* NEW CSS FOR NEW SLIDER */
@@ -2340,3 +2341,63 @@ input:focus {
     top: 15px;
 }
 }
+
+.modal-dialog {
+    border-radius: 10px!important;
+}
+
+.modal-dialog .form-section{
+    padding: 40px;
+}
+
+.modal-title {
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.modal-description {
+    margin: 2px 0;
+    font-size: 15px;
+    color: #605E5C;
+}
+
+.form-section label {
+    margin: 5px 0;
+    color: #000000;
+    font-size: 14px;
+}
+.form-section input {
+    margin: 5px 0;
+}
+
+.form-section .checkout-btn {
+    background: #E71C23;
+    border-radius: 10px;
+    color: #fff;
+    padding: 8px 45px;
+    margin: 10px 0;
+}
+
+.gift-image-section {
+    background-image: url(./assets/gift-image.png);
+}
+
+@media screen and (max-width:980px){
+    .gift-image-section {
+        display: none;
+    }
+}
+
+@media screen and (max-width:619px){
+    .modal-dialog {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .modal-dialog {
+        max-width: 60%;
+    }
+}
+
