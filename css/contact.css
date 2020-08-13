@@ -1,0 +1,21 @@
+.contact-us {
+    margin: 150px 0;
+}
+
+.contact-us .description{
+    line-height: 30px;
+}
+
+.contact-us i {
+    font-size: 35px;
+    position: relative;
+    top: 8px;
+    margin: 0 10px;
+    color: #b3b3b3;
+}
+
+.form-container {
+    box-shadow: 5px 0px 10px #c3c3c3;
+    padding:25px;
+    border-radius: 7px;
+}
