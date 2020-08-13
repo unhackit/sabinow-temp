@@ -1,0 +1,97 @@
+.faq .main__view {
+    background-color: #ebebeb;  /* fallback for old browsers */
+    width: 100%;
+    background-image: url('../assets/faq.png');
+    background-size: 350px;
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+.search__field h4 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.search__field {
+    width: 50%;
+    margin: 150px auto;
+}
+
+.search__field input {
+    height: 60px;
+    border: none;
+}
+
+.search__field input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.search__field .input-group-text {
+    background: #fff;
+    border: none;
+}
+
+.faq_container {
+    margin-top: 40px;
+}
+
+.faq_container .faq__tabs {
+    display: flex;
+    justify-content: center;
+}
+
+.faq_container .faq__tabs div{
+    margin: 0 20px;
+    padding: 0 20px;
+}
+
+.faq_container .faq__tabs div:hover{
+    margin: 0 20px;
+    border-bottom: 4px solid #c3c3c3;
+}
+
+.faq_container .faq__tabs div.active{
+    margin: 0 20px;
+    border-bottom: 4px solid #E71C23;;
+}
+
+.faq_container .faq__tabs div p{
+    font-size: 30px;
+    cursor: pointer;
+    width: 40%;
+    margin: 5px 0;
+}
+
+.questions  {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.questions .card {
+    border: none;
+    box-shadow: 10px 5px 10px #c3c3c3;
+    margin: 10px 0;
+}
+
+.questions .card .card-header{
+    background: #fff;
+    border: none;
+    border-bottom: 1px solid #f1f0f4;
+}
+
+.questions .card .card-header h2{
+   font-size: 20px;
+   padding: 10px 0;
+   cursor: pointer;
+}
+
+
+
+@media screen and (max-width:600px){
+    .search__field {
+        width: 90%;
+        margin: 150px auto;
+    }
+}
